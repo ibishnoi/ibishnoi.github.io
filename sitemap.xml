@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://netlify.app/blog/</loc>
+    <lastmod>2020-10-02T21:49:20+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://netlify.app/categories/</loc>
+    <lastmod>2020-10-02T21:49:20+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://netlify.app/categories/cv/</loc>
+    <lastmod>2020-10-02T21:49:20+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://netlify.app/blog/2020/10/02/import/</loc>
+    <lastmod>2020-10-02T21:49:20+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://netlify.app/blog/2020/10/02/management/</loc>
+    <lastmod>2020-10-02T21:49:20+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://netlify.app/</loc>
+    <lastmod>2020-10-02T21:49:20+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://netlify.app/categories/r/</loc>
+    <lastmod>2020-10-02T21:49:20+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://netlify.app/blog/2020/10/02/talksandconferences/</loc>
+    <lastmod>2020-10-02T21:49:20+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://netlify.app/tags/hugo/</loc>
+    <lastmod>2015-08-03T13:39:46+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://netlify.app/blog/2015/08/03/hugo-is-for-lovers/</loc>
+    <lastmod>2015-08-03T13:39:46+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://netlify.app/categories/pseudo/</loc>
+    <lastmod>2015-08-03T13:39:46+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://netlify.app/tags/</loc>
+    <lastmod>2015-08-03T13:39:46+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://netlify.app/blog/2015/07/23/2015-07-23-r-rmarkdown/</loc>
+    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://netlify.app/tags/plot/</loc>
+    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://netlify.app/tags/r-markdown/</loc>
+    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://netlify.app/tags/regression/</loc>
+    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://netlify.app/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://netlify.app/contact/</loc>
+  </url>
+  
+  <url>
+    <loc>https://netlify.app/cv/</loc>
+  </url>
+  
+  <url>
+    <loc>https://netlify.app/tags/ipsum/</loc>
+  </url>
+  
+  <url>
+    <loc>https://netlify.app/categories/lorem/</loc>
+  </url>
+  
+  <url>
+    <loc>https://netlify.app/blog/1/01/01/migrate-from-jekyll/</loc>
+  </url>
+  
+</urlset>
