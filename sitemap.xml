@@ -33,6 +33,11 @@
   </url>
   
   <url>
+    <loc>https://ibishnoi.github.io//blog/2020/10/02/pwr/</loc>
+    <lastmod>2020-10-02T21:49:20+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ibishnoi.github.io//categories/r/</loc>
     <lastmod>2020-10-02T21:49:20+02:00</lastmod>
   </url>
@@ -40,46 +45,6 @@
   <url>
     <loc>https://ibishnoi.github.io//blog/2020/10/02/talksandconferences/</loc>
     <lastmod>2020-10-02T21:49:20+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ibishnoi.github.io//tags/hugo/</loc>
-    <lastmod>2015-08-03T13:39:46+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ibishnoi.github.io//blog/2015/08/03/hugo-is-for-lovers/</loc>
-    <lastmod>2015-08-03T13:39:46+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ibishnoi.github.io//categories/pseudo/</loc>
-    <lastmod>2015-08-03T13:39:46+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ibishnoi.github.io//tags/</loc>
-    <lastmod>2015-08-03T13:39:46+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ibishnoi.github.io//blog/2015/07/23/2015-07-23-r-rmarkdown/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ibishnoi.github.io//tags/plot/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ibishnoi.github.io//tags/r-markdown/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ibishnoi.github.io//tags/regression/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
   </url>
   
   <url>
@@ -95,15 +60,7 @@
   </url>
   
   <url>
-    <loc>https://ibishnoi.github.io//tags/ipsum/</loc>
-  </url>
-  
-  <url>
-    <loc>https://ibishnoi.github.io//categories/lorem/</loc>
-  </url>
-  
-  <url>
-    <loc>https://ibishnoi.github.io//blog/1/01/01/migrate-from-jekyll/</loc>
+    <loc>https://ibishnoi.github.io//tags/</loc>
   </url>
   
 </urlset>

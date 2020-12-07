@@ -31,14 +31,14 @@ str(df)  To view the first six lines of df use the function &amp;lt;head()&amp;g
     </item>
     
     <item>
-      <title>Hello R Markdown</title>
-      <link>https://ibishnoi.github.io//blog/2015/07/23/2015-07-23-r-rmarkdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      <title>PWR in R</title>
+      <link>https://ibishnoi.github.io//blog/2020/10/02/pwr/</link>
+      <pubDate>Fri, 02 Oct 2020 21:49:20 +0200</pubDate>
       
-      <guid>https://ibishnoi.github.io//blog/2015/07/23/2015-07-23-r-rmarkdown/</guid>
-      <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
-You can embed an R code chunk like this:
-summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.</description>
+      <guid>https://ibishnoi.github.io//blog/2020/10/02/pwr/</guid>
+      <description>As researchers it’s always tough to gage how many participants we need to recruit for our study. There are a number of ways to figure this out, but R offers some good packages that do this for us.
+Let&amp;rsquo;s take a look at the pwr package. To begin, let&amp;rsquo;s install and call on this package:
+install.packages(&amp;quot;pwr&amp;quot;) library(pwr)  Once you&amp;rsquo;ve got that, let&amp;rsquo;s take a look at the many statistical analyses this package supports.</description>
     </item>
     
   </channel>
