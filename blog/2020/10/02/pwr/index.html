@@ -7,8 +7,8 @@
   <meta name="googlebot" content="index,follow,snippet,archive">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <title>Hugo is for lovers</title>
-  <meta name="author" content="DevCows" />
+  <title>PWR in R</title>
+  <meta name="author" content="Indra Bishnoi" />
   
   
   
@@ -66,37 +66,36 @@
   
   <meta property="og:locale" content="en_us">
   <meta property="og:site_name" content="Indra Bishnoi">
-  <meta property="og:title" content="Hugo is for lovers">
+  <meta property="og:title" content="PWR in R">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="https://ibishnoi.github.io//blog/2015/08/03/hugo-is-for-lovers/" />
+  <meta property="og:url" content="https://ibishnoi.github.io//blog/2020/10/02/pwr/" />
   <meta property="og:description" content="Site template made by devcows using hugo">
-  <meta property="og:image" content="https://ibishnoi.github.io/img/banners/banner-3.jpg">
+  <meta property="og:image" content="https://ibishnoi.github.io/img/banners/graph.jpg">
   <meta property="og:image:type" content="image/jpg">
   
   
   
-    <meta property="og:image:width" content="1000">
-    <meta property="og:image:height" content="750">
+    <meta property="og:image:width" content="1339">
+    <meta property="og:image:height" content="647">
   
   
-  <meta property="og:updated_time" content="2015-08-03T13:39:46&#43;0200">
+  <meta property="og:updated_time" content="2020-10-02T21:49:20&#43;0200">
   
     
     
-    <meta property="article:section" content="pseudo">
-    <meta property="article:tag" content="hugo">
+    <meta property="article:section" content="R">
     
     
-    <meta property="article:published_time" content="2015-08-03T13:39:46&#43;0200">
-    <meta property="article:modified_time" content="2015-08-03T13:39:46&#43;0200">
+    <meta property="article:published_time" content="2020-10-02T21:49:20&#43;0200">
+    <meta property="article:modified_time" content="2020-10-02T21:49:20&#43;0200">
   
 
   
   <meta name="twitter:card" content="summary_large_image">
   
-  <meta name="twitter:title" content="Hugo is for lovers">
+  <meta name="twitter:title" content="PWR in R">
   
-  <meta name="twitter:image" content="https://ibishnoi.github.io/img/banners/banner-3.jpg">
+  <meta name="twitter:image" content="https://ibishnoi.github.io/img/banners/graph.jpg">
   
   <meta name="twitter:description" content="Site template made by devcows using hugo">
   
@@ -113,9 +112,9 @@
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand home" href="/">
-                    <img src="/img/logo.png" alt="Hugo is for lovers logo" class="hidden-xs hidden-sm">
-                    <img src="/img/logo-small.png" alt="Hugo is for lovers logo" class="visible-xs visible-sm">
-                    <span class="sr-only">Hugo is for lovers - go to homepage</span>
+                    <img src="/img/logo.png" alt="PWR in R logo" class="hidden-xs hidden-sm">
+                    <img src="/img/logo-small.png" alt="PWR in R logo" class="visible-xs visible-sm">
+                    <span class="sr-only">PWR in R - go to homepage</span>
                 </a>
                 <div class="navbar-buttons">
                     <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
@@ -191,7 +190,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1>Hugo is for lovers</h1>
+                <h1>PWR in R</h1>
             </div>
         </div>
     </div>
@@ -209,67 +208,72 @@
 
                         
                           <p class="text-muted text-uppercase mb-small text-right">
-                            
-                            
-                            December 9, 3030
+                            By <a href="#">Indra Bishnoi</a>
+                             | 
+                            December 9, 2020
                           </p>
                         
 
                         <div id="post-content">
-                          <h2 id="step-1-install-hugo">Step 1. Install Hugo</h2>
-<p>Goto <a href="https://github.com/spf13/hugo/releases">hugo releases</a> and download the
-appropriate version for your os and architecture.</p>
-<p>Save it somewhere specific as we will be using it in the next step.</p>
-<p>More complete instructions are available at <a href="/overview/installing/">installing hugo</a></p>
-<h2 id="step-2-build-the-docs">Step 2. Build the Docs</h2>
-<p>Hugo has its own example site which happens to also be the documentation site
-you are reading right now.</p>
-<p>Follow the following steps:</p>
-<ol>
-<li>Clone the <a href="http://github.com/spf13/hugo">hugo repository</a></li>
-<li>Go into the repo</li>
-<li>Run hugo in server mode and build the docs</li>
-<li>Open your browser to http://localhost:1313</li>
-</ol>
-<p>Corresponding pseudo commands:</p>
-<pre><code>git clone https://github.com/spf13/hugo
-cd hugo
-/path/to/where/you/installed/hugo server --source=./docs
-&gt; 29 pages created
-&gt; 0 tags index created
-&gt; in 27 ms
-&gt; Web Server is available at http://localhost:1313
-&gt; Press ctrl+c to stop
+                          <p>As researchers it’s always tough to gage how many participants we need to recruit for our study. There are a number of ways to figure this out, but R offers some good packages that do this for us.</p>
+<p>Let&rsquo;s take a look at the pwr package. To begin, let&rsquo;s install and call on this package:</p>
+<pre><code>install.packages(&quot;pwr&quot;)
+library(pwr)
 </code></pre>
-<p>Once you&rsquo;ve gotten here, follow along the rest of this page on your local build.</p>
-<h2 id="step-3-change-the-docs-site">Step 3. Change the docs site</h2>
-<p>Stop the Hugo process by hitting ctrl+c.</p>
-<p>Now we are going to run hugo again, but this time with hugo in watch mode.</p>
-<pre><code>/path/to/hugo/from/step/1/hugo server --source=./docs --watch
-&gt; 29 pages created
-&gt; 0 tags index created
-&gt; in 27 ms
-&gt; Web Server is available at http://localhost:1313
-&gt; Watching for changes in /Users/spf13/Code/hugo/docs/content
-&gt; Press ctrl+c to stop
+<p>Once you&rsquo;ve got that, let&rsquo;s take a look at the many statistical analyses this package supports.</p>
+<h3 id="pwr-functions">pwr functions</h3>
+<p>pwr gives you the ability to run the power calculations for both one and two sample(s) t-tests using the <code>&lt;pwr.t.test&gt;</code> and <code>&lt;pwr.t2n.test&gt;</code>functions, respectively. Additionally, correlations (<code>&lt;pwr.r.test&gt;</code>), chi-squares (<code>&lt;pwr.chisq.test&gt;</code>), one-way ANOVAs (<code>&lt;pwr.anova.test&gt;</code>), and even general linear models (<code>&lt;pwr.f2.test&gt;</code>) are supported.</p>
+<p>Each of these functions have specific arguments that need to be addressed. You&rsquo;ll find all of these below.</p>
+<p><strong>T-test</strong></p>
+<pre><code>pwr.t.test(d = , n = , sig.level = , power = )
 </code></pre>
-<p>Open your <a href="http://vim.spf13.com">favorite editor</a> and change one of the source
-content pages. How about changing this very file to <em>fix the typo</em>. How about changing this very file to <em>fix the typo</em>.</p>
-<p>Content files are found in <code>docs/content/</code>. Unless otherwise specified, files
-are located at the same relative location as the url, in our case
-<code>docs/content/overview/quickstart.md</code>.</p>
-<p>Change and save this file.. Notice what happened in your terminal.</p>
-<pre><code>&gt; Change detected, rebuilding site
-
-&gt; 29 pages created
-&gt; 0 tags index created
-&gt; in 26 ms
+<p>Here, d is your Cohen&rsquo;s d/effect size, n is your sample size, sig.level is your alpha (usually .05), and power is the power you&rsquo;d like to obtain. By filling out all except one, e.g. n, R will return the missing value. The same logic applies to all of the following functions.</p>
+<p>If you&rsquo;d like to use a t-test, but have unequal sample sizes, make sure to use</p>
+<pre><code>pwr.t2n.test(n1 = , n2= , d = , sig.level =, power = )
 </code></pre>
-<p>Refresh the browser and observe that the typo is now fixed.</p>
-<p>Notice how quick that was. Try to refresh the site before it&rsquo;s finished building.. I double dare you.
-Having nearly instant feedback enables you to have your creativity flow without waiting for long builds.</p>
-<h2 id="step-4-have-fun">Step 4. Have fun</h2>
-<p>The best way to learn something is to play with it.</p>
+<p>Use n1 and n2 to identify the sample size of each group.</p>
+<p><strong>Correlation</strong></p>
+<pre><code>pwr.r.test(n = , r = , sig.level = , power = )
+</code></pre>
+<p>Here, n is the sample size, r in the correlation coefficient, sig.level is your alpha, and power is your desired power.</p>
+<p><strong>Chi-square</strong></p>
+<pre><code>pwr.chisq.test(w =, N = , df = , sig.level =, power = )
+</code></pre>
+<p>Here, w is your effect size, N is the total sample size, df is your degrees of freedom, sig.level is your alpha, and power is your desired power.</p>
+<p><strong>One-way ANOVA</strong></p>
+<pre><code>pwr.anova.test(k = , n = , f = , sig.level = , power = )
+</code></pre>
+<p>Here, k is your number of groups, n is the sample size, f is the effect size, sig.level is your alpha, and power is your desired power.</p>
+<p><strong>General linear model</strong></p>
+<pre><code>pwr.f2.test(u =, v = , f2 = , sig.level = , power = )
+</code></pre>
+<p>Here, u and v are the numerator and denominator degrees of freedom, respectively, f2 is the effect size, sig.level is your alpha, and power is your desired power.</p>
+<h3 id="examples">Examples</h3>
+<p>To gain a better understanding of these, let&rsquo;s run through some examples.</p>
+<p>Let&rsquo;s say we have 5 groups, cat owners, dog owners, bird owners, reptile owners, and no pet owners, and we want to compare their subjective stress levels in an <strong>anova</strong>. We want to calculate the n (sample size) we would need to informatively compare these groups. We want a standard power of .80 and sig. level of .05, and in the literature we see that there is a moderate effect size (.25) so we stick to that. This is what this example would look like:</p>
+<pre><code>pwr.anova.test(k = 5, n = , f = .25, sig.level = .05, power = .80)
+</code></pre>
+<p>Let&rsquo;s do another example:</p>
+<p>Support we want to conduct a goodness of fit test, or chi-squared. Let&rsquo;s say we&rsquo;d like to use a moderate effect size (.30), with a significance level of .05 and standard power of .80. We want 5 groups, so a df of 4. But what should our total sample size (N) be? Let&rsquo;s calculate!</p>
+<pre><code>pwr.chisq.test(w = .30, N = , df = 4, sig.level = .05, power = .80)
+</code></pre>
+<h3 id="examples-plotted">Examples plotted</h3>
+<p>In order to plot our power analyses, the pwr package has an amazing plot function that let&rsquo;s us standardize our plots.</p>
+<p>First, save your analyses into the global environment</p>
+<pre><code>p.anova.plot &lt;- pwr.anova.test(k = 5, n = , f = .25, sig.level = .05, power = .80)
+p.chi.plot &lt;- pwr.chisq.test(w = .30, N = , df = 4, sig.level = .05, power = .80)
+</code></pre>
+<p>Now, use <code>&lt;plot&gt;</code> to plot!</p>
+<pre><code>plot(p.anova.plot)
+plot(p.chi.plot)
+</code></pre>
+<p>We can use this plotting format for all of the pwr analyses!</p>
+<h3 id="the-graphs-we-created-respectively">The graphs we created, respectively</h3>
+<p><img src="https://i.ibb.co/7YkrdKV/anova-plot.png" alt=""></p>
+<p><img src="https://i.ibb.co/rxg48J7/chi-plot.png" alt=""></p>
+<blockquote>
+<p>See any issues? Contact me to let me know!</p>
+</blockquote>
 
                         </div>
                         
@@ -351,14 +355,14 @@ Having nearly instant feedback enables you to have your creativity flow without 
                 
                 <div class="item same-height-row clearfix">
                     <div class="image same-height-always">
-                        <a href="https://ibishnoi.github.io//blog/2020/10/02/talksandconferences/">
+                        <a href="https://ibishnoi.github.io//blog/2020/10/02/pwr/">
                           
-                            <img src="/img/banners/LHRD.jpg" class="img-responsive" alt="Talks and Conferences">
+                            <img src="/img/banners/graph.jpg" class="img-responsive" alt="PWR in R">
                           
                         </a>
                     </div>
                     <div class="name same-height-always">
-                        <h5><a href="https://ibishnoi.github.io//blog/2020/10/02/talksandconferences/">Talks and Conferences</a></h5>
+                        <h5><a href="https://ibishnoi.github.io//blog/2020/10/02/pwr/">PWR in R</a></h5>
                     </div>
                 </div>
                 

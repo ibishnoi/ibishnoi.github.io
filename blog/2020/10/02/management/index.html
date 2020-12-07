@@ -246,8 +246,11 @@
 <p><strong>Example:</strong> Maybe you&rsquo;d like to choose the first 5 lines of your data frame and save them into a new data frame. I&rsquo;m going to call this new data frame <strong>head.df</strong>. I would then simply use the <code>&lt;head()&gt;</code> function and specify the number of lines I want, like so:</p>
 <pre><code>head.df &lt;- head(df, 5)
 </code></pre>
-<p>Maybe you&rsquo;d like to select portions of this new data frame, <strong>head.df</strong>. Say these variable names are page1, page2, and page3 and you&rsquo;d like to save them back into <strong>head.df</strong>. For this, use the <code>&lt;select()&gt;</code> function.</p>
-<p>If they these columns are beside each other:</p>
+<p>Maybe you&rsquo;d like to select portions of this new data frame, <strong>head.df</strong>. Say these variable names are page1, page2, and page3 and you&rsquo;d like to save them back into <strong>head.df</strong>. For this, use the <code>&lt;select()&gt;</code> function. To do this, install and call on tidyverse.</p>
+<pre><code>install.packages(&quot;tidyverse&quot;)
+library(tidyverse)
+</code></pre>
+<p>Now, If the columns are beside each other:</p>
 <pre><code>head.df &lt;- select(head.df, page1:page3)
 </code></pre>
 <p>If they are not beside each other separate the variable names by a comma:</p>
@@ -268,6 +271,9 @@ library(naniar)
 <p>Once you know whether or not you have missing values and where they are, you may want to exclude them from your analyses. Do to this, use the <code>&lt;na.rm&gt;</code> argument. In this case, we&rsquo;re trying to find the mean of page1 in head.df without the missing values.</p>
 <pre><code>mean(head.df$page1, na.rm = TRUE)
 </code></pre>
+<blockquote>
+<p>See any issues? Contact me to let me know!</p>
+</blockquote>
 
                         </div>
                         
@@ -349,14 +355,14 @@ library(naniar)
                 
                 <div class="item same-height-row clearfix">
                     <div class="image same-height-always">
-                        <a href="https://ibishnoi.github.io//blog/2020/10/02/talksandconferences/">
+                        <a href="https://ibishnoi.github.io//blog/2020/10/02/pwr/">
                           
-                            <img src="/img/banners/LHRD.jpg" class="img-responsive" alt="Talks and Conferences">
+                            <img src="/img/banners/graph.jpg" class="img-responsive" alt="PWR in R">
                           
                         </a>
                     </div>
                     <div class="name same-height-always">
-                        <h5><a href="https://ibishnoi.github.io//blog/2020/10/02/talksandconferences/">Talks and Conferences</a></h5>
+                        <h5><a href="https://ibishnoi.github.io//blog/2020/10/02/pwr/">PWR in R</a></h5>
                     </div>
                 </div>
                 

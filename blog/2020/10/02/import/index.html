@@ -237,13 +237,15 @@ install.packages(&quot;foreign&quot;)
 <pre><code>df &lt;-read_excel(&quot;./data.xlsx&quot;)
 </code></pre>
 <h3 id="from-spss">From SPSS</h3>
-<p>A number of labs that previously used SPSS are now transitioning over to R. When importing a SPSS dataframe to R (e.g. data.sav), put it into your working directory and then use the foreign package:</p>
+<p>A number of labs that previously used SPSS are now transitioning over to R. When importing a SPSS dataframe to R (e.g. data.sav), put it into your working directory and then call on the foreign package:</p>
 <pre><code>library(foreign)
-df &lt;- read.spss(&quot;data.sav&quot;, use.value.label=TRUE, to.data.frame=TRUE)
+</code></pre>
+<p>Then, read in your file, I&rsquo;m saving this into data frame df:</p>
+<pre><code>df &lt;- read.spss(&quot;data.sav&quot;, use.value.label=TRUE, to.data.frame=TRUE)
 </code></pre>
 <p>Here, I saved my SPSS file into my global environment with the name df and used the <code>&lt;read.spss&gt;</code> command to import. <code>&lt;use.value.label=TRUE&gt;</code> converts variables with value labels in SPSS into R factor. <code>&lt;to.data.frame=TRUE&gt;</code> makes the df a data frame. If it was not defined/FALSE (default), the df would be a list instead of a data frame.</p>
 <h3 id="from-a-package">From a package</h3>
-<p>Someimtes, packages come with their own dataframe. For example, tidyverse has a fun starwars data frame which can be used as a sample data set (named df). To load this:</p>
+<p>Sometimes, packages come with their own dataframe. For example, tidyverse has a fun starwars data frame which can be used as a sample data set (named df). To load this:</p>
 <pre><code>library(tidyverse)
 df &lt;- starwars
 </code></pre>
@@ -331,14 +333,14 @@ df &lt;- starwars
                 
                 <div class="item same-height-row clearfix">
                     <div class="image same-height-always">
-                        <a href="https://ibishnoi.github.io//blog/2020/10/02/talksandconferences/">
+                        <a href="https://ibishnoi.github.io//blog/2020/10/02/pwr/">
                           
-                            <img src="/img/banners/LHRD.jpg" class="img-responsive" alt="Talks and Conferences">
+                            <img src="/img/banners/graph.jpg" class="img-responsive" alt="PWR in R">
                           
                         </a>
                     </div>
                     <div class="name same-height-always">
-                        <h5><a href="https://ibishnoi.github.io//blog/2020/10/02/talksandconferences/">Talks and Conferences</a></h5>
+                        <h5><a href="https://ibishnoi.github.io//blog/2020/10/02/pwr/">PWR in R</a></h5>
                     </div>
                 </div>
                 
