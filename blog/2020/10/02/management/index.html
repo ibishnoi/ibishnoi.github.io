@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Data Management in R</title>
+  <meta name="author" content="Indra Bishnoi" />
+  
+  
+  
+  
+  <meta name="keywords" content="devows, hugo, go">
+  
+  
+  <meta name="description" content="Site template made by devcows using hugo">
+
+  <meta name="generator" content="Hugo 0.79.0" />
+
+  
+  <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  
+  <link href="/css/animate.css" rel="stylesheet">
+
+  
+  
+    <link href="/css/style.default.css" rel="stylesheet" id="theme-stylesheet">
+  
+
+  
+  <link href="/css/custom.css" rel="stylesheet">
+
+  
+  
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+
+  
+  <link href="/css/owl.carousel.css" rel="stylesheet">
+  <link href="/css/owl.theme.css" rel="stylesheet">
+
+  
+  <link rel="alternate" href="https://example.org/index.xml" type="application/rss+xml" title="Indra Bishnoi">
+
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:locale" content="en_us">
+  <meta property="og:site_name" content="Indra Bishnoi">
+  <meta property="og:title" content="Data Management in R">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://example.org/blog/2020/10/02/management/" />
+  <meta property="og:description" content="Site template made by devcows using hugo">
+  <meta property="og:image" content="https://example.org/img/banners/management.png">
+  <meta property="og:image:type" content="image/png">
+  
+  
+  
+    <meta property="og:image:width" content="575">
+    <meta property="og:image:height" content="500">
+  
+  
+  <meta property="og:updated_time" content="2020-10-02T21:49:20&#43;0200">
+  
+    
+    
+    <meta property="article:section" content="R">
+    
+    
+    <meta property="article:published_time" content="2020-10-02T21:49:20&#43;0200">
+    <meta property="article:modified_time" content="2020-10-02T21:49:20&#43;0200">
+  
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <meta name="twitter:title" content="Data Management in R">
+  
+  <meta name="twitter:image" content="https://example.org/img/banners/management.png">
+  
+  <meta name="twitter:description" content="Site template made by devcows using hugo">
+  
+
+</head>
+
+
+  <body>
+
+    <div id="all">
+
+        <header class="navbar-affixed-top" data-spy="affix" data-offset-top="62">
+    <div class="navbar navbar-default yamm" role="navigation" id="navbar">    
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand home" href="/">
+                    <img src="/img/logo.png" alt="Data Management in R logo" class="hidden-xs hidden-sm">
+                    <img src="/img/logo-small.png" alt="Data Management in R logo" class="visible-xs visible-sm">
+                    <span class="sr-only">Data Management in R - go to homepage</span>
+                </a>
+                <div class="navbar-buttons">
+                    <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
+                      <span class="sr-only">Toggle Navigation</span>
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+                </div>
+            </div>
+            
+
+            <div class="navbar-collapse collapse" id="navigation">
+                <ul class="nav navbar-nav navbar-right">
+                  
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/">Home</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/about/">About</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown active">
+                    
+                    <a href="/blog/">Blog</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/cv/">cv</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/contact/">contact</a>
+                    
+                  </li>
+                  
+                </ul>
+            </div>
+            
+
+            <div class="collapse clearfix" id="search">    
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-btn">
+                    <button type="submit" class="btn btn-template-main"><i class="fas fa-search"></i></button>
+                </span>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+</header>
+
+
+
+
+        <div id="heading-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Data Management in R</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <div id="content">
+            <div class="container">
+
+                <div class="row">
+
+                    
+
+                    <div class="col-md-9" id="blog-post">
+
+                        
+                          <p class="text-muted text-uppercase mb-small text-right">
+                            By <a href="#">Indra Bishnoi</a>
+                             | 
+                            December 9, 2020
+                          </p>
+                        
+
+                        <div id="post-content">
+                          <p>In this tutorial, I will teach you how to manage your data in R. Specifically, <strong>how to view and select your data, and how to deal with missing data.</strong></p>
+<p>Before you begin, remember to <a href="/blog/2020/10/02/import/">import your data</a>.</p>
+<h3 id="viewing-your-data">Viewing your data</h3>
+<p>If your data frame is called df, then use the <code>&lt;str()&gt;</code> function to view it&rsquo;s <strong>structure</strong>.</p>
+<pre><code>str(df) 
+</code></pre>
+<p>To view the <strong>first six lines</strong> of df use the function <code>&lt;head()&gt;</code>.</p>
+<pre><code>head(df)
+</code></pre>
+<p>To view the <strong>last six lines</strong> of df use the function <code>&lt;tail()&gt;</code>.</p>
+<pre><code>tail(df)
+</code></pre>
+<p>Maybe before these you&rsquo;d like to know the <strong>number of rows</strong> in df. For this, use the <code>&lt;nrow()&gt;</code> function.</p>
+<pre><code>nrow(df)
+</code></pre>
+<p>To know the number of <strong>columns in df</strong>, use the <code>&lt;ncol()&gt;</code> function.</p>
+<pre><code>ncol(df)
+</code></pre>
+<p>To view a <strong>list of all of the defined data</strong> use the <code>&lt;ls()&gt;</code> function.</p>
+<pre><code>ls(df)
+</code></pre>
+<p>To view the type of variable you have e.g. integer, character, etc., use the <code>&lt;typeof()&gt;</code> function. I&rsquo;m curious what type of variable page1 is in  df.</p>
+<pre><code>typeof(df$page1)
+</code></pre>
+<p>Looking to view the <strong>summary statistics</strong> before you start manipulating your data? Use the <code>&lt;summary()&gt;</code> function.</p>
+<pre><code>summary(df)
+</code></pre>
+<h3 id="selecting-variables">Selecting Variables</h3>
+<p><strong>Example:</strong> Maybe you&rsquo;d like to choose the first 5 lines of your data frame and save them into a new data frame. I&rsquo;m going to call this new data frame <strong>head.df</strong>. I would then simply use the <code>&lt;head()&gt;</code> function and specify the number of lines I want, like so:</p>
+<pre><code>head.df &lt;- head(df, 5)
+</code></pre>
+<p>Maybe you&rsquo;d like to select portions of this new data frame, <strong>head.df</strong>. Say these variable names are page1, page2, and page3 and you&rsquo;d like to save them back into <strong>head.df</strong>. For this, use the <code>&lt;select()&gt;</code> function.</p>
+<p>If they these columns are beside each other:</p>
+<pre><code>head.df &lt;- select(head.df, page1:page3)
+</code></pre>
+<p>If they are not beside each other separate the variable names by a comma:</p>
+<pre><code>head.df &lt;- select(head.df, page1, page2, page3)
+</code></pre>
+<h3 id="exploring-missingness">Exploring Missingness</h3>
+<p>As there is inevitably some human error in many of our data frames, everyone should get comfortable with dealing with missing values. While this tutorial will be covering some basic ways to deal with missingness, I would recommend following this tutorial up with <a href="https://allisonhorst.shinyapps.io/missingexplorer/#section-introduction">Allison Horst&rsquo;s &ldquo;Exploring missing values in naniar&rdquo; tutorial</a>.</p>
+<p>For this portion of the tutorial, please download and call on the nanier package:</p>
+<pre><code>install.packages(&quot;naniar&quot;)
+library(naniar)
+</code></pre>
+<p>To figure out how many missing data points you have in head.df, use the <code>&lt;miss_var_summary()&gt;</code> function. This gives you a table which summarizes all of your missing values in your data frame.</p>
+<pre><code>miss_var_summary(head.df)
+</code></pre>
+<p>If lists aren&rsquo;t your thing and you&rsquo;d prefer a quick and dirty visualization of the missingness of your data, use the <code>&lt;vis_miss()&gt;</code> function.</p>
+<pre><code>vis_miss(head.df)
+</code></pre>
+<p>Once you know whether or not you have missing values and where they are, you may want to exclude them from your analyses. Do to this, use the <code>&lt;na.rm&gt;</code> argument. In this case, we&rsquo;re trying to find the mean of page1 in head.df without the missing values.</p>
+<pre><code>mean(head.df$page1, na.rm = TRUE)
+</code></pre>
+
+                        </div>
+                        
+                        
+
+                    </div>
+                    
+
+                    
+
+                    
+
+                    <div class="col-md-3">
+
+                        
+
+                        
+
+
+
+
+
+
+
+
+
+                        
+
+                    </div>
+                    
+
+                    
+
+                </div>
+                
+
+            </div>
+            
+        </div>
+        
+
+        <footer id="footer">
+    <div class="container">
+
+        
+
+        <div class="col-md-4 col-sm-6">
+
+             
+            <h4>Recent posts</h4>
+
+            <div class="blog-entries">
+                
+                <div class="item same-height-row clearfix">
+                    <div class="image same-height-always">
+                        <a href="https://example.org/blog/2020/10/02/import/">
+                          
+                            <img src="/img/banners/import.png" class="img-responsive" alt="Data Importation in R">
+                          
+                        </a>
+                    </div>
+                    <div class="name same-height-always">
+                        <h5><a href="https://example.org/blog/2020/10/02/import/">Data Importation in R</a></h5>
+                    </div>
+                </div>
+                
+                <div class="item same-height-row clearfix">
+                    <div class="image same-height-always">
+                        <a href="https://example.org/blog/2020/10/02/management/">
+                          
+                            <img src="/img/banners/management.png" class="img-responsive" alt="Data Management in R">
+                          
+                        </a>
+                    </div>
+                    <div class="name same-height-always">
+                        <h5><a href="https://example.org/blog/2020/10/02/management/">Data Management in R</a></h5>
+                    </div>
+                </div>
+                
+                <div class="item same-height-row clearfix">
+                    <div class="image same-height-always">
+                        <a href="https://example.org/blog/2020/10/02/pwr/">
+                          
+                            <img src="/img/banners/graph.jpg" class="img-responsive" alt="PWR in R">
+                          
+                        </a>
+                    </div>
+                    <div class="name same-height-always">
+                        <h5><a href="https://example.org/blog/2020/10/02/pwr/">PWR in R</a></h5>
+                    </div>
+                </div>
+                
+            </div>
+
+            <hr class="hidden-md hidden-lg">
+             
+
+        </div>
+        
+
+        
+        <div class="col-md-4 col-sm-6">
+
+          <h4>Contact</h4>
+
+            <p class="text-uppercase"><strong>Western Social Science Centre</strong>
+        <br>1151 Richmond ST
+        <br>London, ON N6A 5C2
+        <br>
+        <strong>Canada</strong>
+      </p>
+      
+
+            <a href="/contact" class="btn btn-small btn-template-main">Go to contact page</a>
+
+            <hr class="hidden-md hidden-lg hidden-sm">
+
+        </div>
+        
+        
+
+    </div>
+    
+</footer>
+
+
+
+
+
+
+
+<div id="copyright">
+    <div class="container">
+        <div class="col-md-12">
+            
+            <p class="pull-right">
+              Template by <a href="https://bootstrapious.com/p/universal-business-e-commerce-template">Bootstrapious</a>.
+              
+
+              Ported to Hugo by <a href="https://github.com/devcows/hugo-universal-theme">DevCows</a>.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    </div>
+    
+
+    
+<script src="//code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0/jquery.counterup.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax.js"></script>
+
+<script src="/js/front.js"></script>
+
+
+<script src="/js/owl.carousel.min.js"></script>
+
+
+
+  </body>
+</html>
