@@ -253,10 +253,12 @@ library(pwr)
 <p>Let&rsquo;s say we have 5 groups, cat owners, dog owners, bird owners, reptile owners, and no pet owners, and we want to compare their subjective stress levels in an <strong>anova</strong>. We want to calculate the n (sample size) we would need to informatively compare these groups. We want a standard power of .80 and sig. level of .05, and in the literature we see that there is a moderate effect size (.25) so we stick to that. This is what this example would look like:</p>
 <pre><code>pwr.anova.test(k = 5, n = , f = .25, sig.level = .05, power = .80)
 </code></pre>
+<p>In this example, we see that the n we would need in each group is ~39 based on our specified parameters.</p>
 <p>Let&rsquo;s do another example:</p>
 <p>Support we want to conduct a goodness of fit test, or chi-squared. Let&rsquo;s say we&rsquo;d like to use a moderate effect size (.30), with a significance level of .05 and standard power of .80. We want 5 groups, so a df of 4. But what should our total sample size (N) be? Let&rsquo;s calculate!</p>
 <pre><code>pwr.chisq.test(w = .30, N = , df = 4, sig.level = .05, power = .80)
 </code></pre>
+<p>In this example, we see that the n we would need in each group is ~133 based on our specified parameters.</p>
 <h3 id="examples-plotted">Examples plotted</h3>
 <p>In order to plot our power analyses, the pwr package has an amazing plot function that let&rsquo;s us standardize our plots.</p>
 <p>First, save your analyses into the global environment</p>
@@ -271,6 +273,7 @@ plot(p.chi.plot)
 <h3 id="the-graphs-we-created-respectively">The graphs we created, respectively</h3>
 <p><img src="https://i.ibb.co/7YkrdKV/anova-plot.png" alt=""></p>
 <p><img src="https://i.ibb.co/rxg48J7/chi-plot.png" alt=""></p>
+<p>While this method is a commonly used method to calculate our sample sizes, I would suggest looking into the T&amp;M power method using the BUCSS package, as it avoids publication bias (only studies finding significant differences tend to be published) and estimation uncertainty (we don’t always know whether and effect is smaller or bigger than is reported in publications). You can find a great reading and tutorial on this package <a href="https://psycnet.apa.org/record/2020-79649-001">here</a>.</p>
 <blockquote>
 <p>See any issues? Contact me to let me know!</p>
 </blockquote>
